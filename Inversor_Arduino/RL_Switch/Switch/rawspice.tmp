@@ -1,0 +1,8 @@
+Title: Circuit1
+Date: Thu Aug 08 14:17:14  2013
+Plotname: Transient Analysis
+Flags: real
+No. Variables: 14
+No. Points: 3460    
+Command: version XSpice 1.0 + Spice3f5
+Variables:

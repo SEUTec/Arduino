@@ -1,0 +1,52 @@
+"Memoria de Càlcul Control Biocida.
+'<hr></hr>'
+'<b>Paràmetres Tank</b>'
+#round 3
+'Diametre Interior,'Diam_Int = 1.064m
+'Altura Interior,'Alt_Int = 1.426m
+'Radi Interior,'Radi_Int = Diam_Int/2
+
+'<b>Volum Interior Total segons planols del Tank</b>
+'Area Tank,'Area_Tank = π*Radi_Int^2
+'Volum Tank,'Volum_Tank = Area_Tank*Alt_Int
+#round 1
+'Volum Tank en Litros,'Volum_Tank|L
+
+'<b>Les nostres mesures ens indiquen</b>
+mmpL = 115.5mm/100L
+Lpmm = 100L/115.5mm
+
+'<b>Configuració SITRANS LR140</b>'
+#round 3
+'Distancia Nivell 0L,'Dis_0L = 1.410m
+'Corresponents a quan la bomba no aspira biocida
+'Distancia Nivell Maxim,'Dis_Max = 10cm
+'Altura Mesura,'Alt_Mesura = Dis_0L - Dis_Max
+
+'<b>Càlcul del Nivell en Litros</b>
+'Volum Mesura,'Volum_Mesura = Lpmm*Alt_Mesura|L
+
+'<b>Obtensió de Litros(mm)</b>'
+'Altura Mesurada segons Nivell Flotador,'Alt_Mesurada = 980mm
+#round 1
+'Litros Mesurats,'Nivell_Mesurat = Alt_Mesurada*Lpmm|L
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

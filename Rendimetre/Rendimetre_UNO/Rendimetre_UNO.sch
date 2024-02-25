@@ -1,0 +1,508 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:opto
+LIBS:contrib
+LIBS:freetronics_schematic
+LIBS:Arduinos
+LIBS:varios
+LIBS:semicond
+LIBS:Rendimetre_UNO-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L R R2
+U 1 1 5716847B
+P 8350 2650
+F 0 "R2" V 8430 2650 50  0000 C CNN
+F 1 "R" V 8350 2650 50  0000 C CNN
+F 2 "Seutec:R0.25W" V 8280 2650 50  0001 C CNN
+F 3 "" H 8350 2650 50  0000 C CNN
+	1    8350 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P5
+U 1 1 57168675
+P 8400 1200
+F 0 "P5" H 8400 1350 50  0000 C CNN
+F 1 "VOUT+" V 8500 1200 50  0000 C CNN
+F 2 "Seutec:RGLT2" H 8400 1200 50  0001 C CNN
+F 3 "" H 8400 1200 50  0000 C CNN
+	1    8400 1200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X02 P6
+U 1 1 571686E5
+P 8650 3050
+F 0 "P6" H 8650 3200 50  0000 C CNN
+F 1 "VOUT-" V 8750 3050 50  0000 C CNN
+F 2 "Seutec:RGLT2" H 8650 3050 50  0001 C CNN
+F 3 "" H 8650 3050 50  0000 C CNN
+	1    8650 3050
+	1    0    0    -1  
+$EndComp
+Text Notes 5250 800  0    60   ~ 0
+Dispisitiu de Prova
+Text Notes 9000 1100 0    60   ~ 0
+CARGA
+$Comp
+L R R1
+U 1 1 57168B64
+P 4100 2250
+F 0 "R1" V 4180 2250 50  0000 C CNN
+F 1 "R" V 4100 2250 50  0000 C CNN
+F 2 "Seutec:R0.25W" V 4030 2250 50  0001 C CNN
+F 3 "" H 4100 2250 50  0000 C CNN
+	1    4100 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P3
+U 1 1 57168B73
+P 4150 1200
+F 0 "P3" H 4150 1350 50  0000 C CNN
+F 1 "VIN+" V 4250 1200 50  0000 C CNN
+F 2 "Seutec:RGLT2" H 4150 1200 50  0001 C CNN
+F 3 "" H 4150 1200 50  0000 C CNN
+	1    4150 1200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 572CE7DB
+P 4900 1850
+F 0 "#PWR01" H 4900 1600 50  0001 C CNN
+F 1 "GND" H 4900 1700 50  0000 C CNN
+F 2 "" H 4900 1850 50  0000 C CNN
+F 3 "" H 4900 1850 50  0000 C CNN
+	1    4900 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L 7805 U2
+U 1 1 572CEA05
+P 2550 5400
+F 0 "U2" H 2700 5204 50  0000 C CNN
+F 1 "DCDC_6.5_0.5" H 2550 5600 50  0000 C CNN
+F 2 "Seutec:DCDC_78xx" H 2550 5400 50  0001 C CNN
+F 3 "" H 2550 5400 50  0000 C CNN
+	1    2550 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 572CEB69
+P 6700 3850
+F 0 "#PWR02" H 6700 3600 50  0001 C CNN
+F 1 "GND" H 6700 3700 50  0000 C CNN
+F 2 "" H 6700 3850 50  0000 C CNN
+F 3 "" H 6700 3850 50  0000 C CNN
+	1    6700 3850
+	0    -1   -1   0   
+$EndComp
+Text Notes 1500 1850 0    60   ~ 0
+Power Source
+$Comp
+L ACS712_Low_Current U1
+U 1 1 572CF68E
+P 2550 4450
+F 0 "U1" H 2200 4150 60  0000 C CNN
+F 1 "ACS712_Low_Current" H 2550 4750 60  0000 C CNN
+F 2 "Seutec_Arduinos:ACS712_Low_Current" H 2550 4450 60  0001 C CNN
+F 3 "" H 2550 4450 60  0000 C CNN
+	1    2550 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 572CF7EF
+P 3250 4300
+F 0 "#PWR03" H 3250 4050 50  0001 C CNN
+F 1 "GND" H 3250 4150 50  0000 C CNN
+F 2 "" H 3250 4300 50  0000 C CNN
+F 3 "" H 3250 4300 50  0000 C CNN
+	1    3250 4300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ACS712_Low_Current U4
+U 1 1 572D00A3
+P 7400 2950
+F 0 "U4" H 7050 2650 60  0000 C CNN
+F 1 "ACS712_Low_Current" H 7400 3250 60  0000 C CNN
+F 2 "Seutec_Arduinos:ACS712_Low_Current" H 7400 2950 60  0001 C CNN
+F 3 "" H 7400 2950 60  0000 C CNN
+	1    7400 2950
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X02 P4
+U 1 1 572D0111
+P 5650 1200
+F 0 "P4" H 5650 1350 50  0000 C CNN
+F 1 "GND" V 5750 1200 50  0000 C CNN
+F 2 "Seutec:RGLT2" H 5650 1200 50  0001 C CNN
+F 3 "" H 5650 1200 50  0000 C CNN
+	1    5650 1200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 572D0933
+P 6700 3350
+F 0 "#PWR04" H 6700 3100 50  0001 C CNN
+F 1 "GND" H 6700 3200 50  0000 C CNN
+F 2 "" H 6700 3350 50  0000 C CNN
+F 3 "" H 6700 3350 50  0000 C CNN
+	1    6700 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P1
+U 1 1 572D0AF5
+P 1600 4600
+F 0 "P1" H 1600 4750 50  0000 C CNN
+F 1 "VIN-" V 1700 4600 50  0000 C CNN
+F 2 "Seutec:RGLT2" H 1600 4600 50  0001 C CNN
+F 3 "" H 1600 4600 50  0000 C CNN
+	1    1600 4600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8350 2800 8350 3100
+Wire Wire Line
+	8350 2200 8350 2500
+Wire Wire Line
+	8350 1400 8350 1700
+Wire Notes Line
+	9150 1200 9150 3050
+Wire Notes Line
+	9150 750  9150 950 
+Wire Notes Line
+	5200 650  6200 650 
+Wire Notes Line
+	6200 650  6200 900 
+Wire Notes Line
+	6200 900  5200 900 
+Wire Notes Line
+	5200 900  5200 650 
+Wire Notes Line
+	8350 750  8350 1050
+Wire Notes Line
+	8950 950  9350 950 
+Wire Notes Line
+	9350 950  9350 1200
+Wire Notes Line
+	9350 1200 8950 1200
+Wire Notes Line
+	8950 1200 8950 950 
+Connection ~ 8350 2400
+Wire Notes Line
+	4200 750  4200 1050
+Wire Notes Line
+	4100 750  4100 1050
+Wire Notes Line
+	5200 750  4200 750 
+Wire Notes Line
+	1250 1700 1450 1700
+Wire Notes Line
+	1350 1700 1350 750 
+Wire Notes Line
+	1350 750  4100 750 
+Wire Notes Line
+	1300 1750 1400 1750
+Wire Wire Line
+	3150 4450 3700 4450
+Wire Wire Line
+	3250 4300 3150 4300
+Wire Wire Line
+	8450 1400 8450 1450
+Wire Wire Line
+	8450 1450 8350 1450
+Connection ~ 8350 1450
+Wire Wire Line
+	2150 1450 4200 1450
+Wire Wire Line
+	4200 1450 4200 1400
+Connection ~ 4100 1450
+Wire Wire Line
+	6700 3100 6700 3350
+Wire Wire Line
+	6700 3100 6800 3100
+Connection ~ 6700 3300
+Wire Notes Line
+	1350 1750 1350 4600
+Wire Notes Line
+	1350 4600 1450 4600
+Wire Wire Line
+	8000 3100 8450 3100
+Wire Wire Line
+	8450 3000 8350 3000
+Connection ~ 8350 3100
+Wire Notes Line
+	8450 750  8450 1050
+Wire Notes Line
+	9150 3050 8850 3050
+Wire Wire Line
+	6800 2800 4600 2800
+Wire Wire Line
+	4900 1850 5300 1850
+Wire Wire Line
+	5100 2150 5100 5350
+Wire Notes Line
+	5650 900  5650 1050
+Wire Wire Line
+	6800 2950 4450 2950
+Wire Wire Line
+	4450 2950 4450 5050
+Wire Wire Line
+	6400 2700 4350 2700
+Wire Wire Line
+	4350 2700 4350 5150
+Connection ~ 8350 3000
+Wire Wire Line
+	6400 2700 6400 2400
+Wire Notes Line
+	6200 750  8350 750 
+Wire Notes Line
+	8450 750  9150 750 
+Wire Wire Line
+	2150 1450 2150 5350
+Wire Wire Line
+	2950 5350 4050 5350
+$Comp
+L GND #PWR05
+U 1 1 572DC556
+P 4100 2500
+F 0 "#PWR05" H 4100 2250 50  0001 C CNN
+F 1 "GND" H 4100 2350 50  0000 C CNN
+F 2 "" H 4100 2500 50  0000 C CNN
+F 3 "" H 4100 2500 50  0000 C CNN
+	1    4100 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 2400 4100 2500
+$Comp
+L GND #PWR06
+U 1 1 572DC6E4
+P 2550 5800
+F 0 "#PWR06" H 2550 5550 50  0001 C CNN
+F 1 "GND" H 2550 5650 50  0000 C CNN
+F 2 "" H 2550 5800 50  0000 C CNN
+F 3 "" H 2550 5800 50  0000 C CNN
+	1    2550 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 5650 2550 5800
+$Comp
+L GND #PWR07
+U 1 1 572DC794
+P 1850 4750
+F 0 "#PWR07" H 1850 4500 50  0001 C CNN
+F 1 "GND" H 1850 4600 50  0000 C CNN
+F 2 "" H 1850 4750 50  0000 C CNN
+F 3 "" H 1850 4750 50  0000 C CNN
+	1    1850 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 4550 1850 4550
+Wire Wire Line
+	1850 4550 1850 4750
+Wire Wire Line
+	1950 4600 1850 4600
+Connection ~ 1850 4600
+Wire Wire Line
+	1800 4650 1850 4650
+Connection ~ 1850 4650
+Wire Wire Line
+	1650 900  5050 900 
+Wire Wire Line
+	5050 900  5050 1450
+Wire Wire Line
+	5050 1450 8000 1450
+Wire Wire Line
+	5600 1450 5600 1400
+Wire Wire Line
+	5700 1450 5700 1400
+Connection ~ 5600 1450
+Wire Wire Line
+	8000 1450 8000 2800
+Connection ~ 5700 1450
+Wire Wire Line
+	1650 900  1650 4300
+Wire Wire Line
+	1650 4300 1950 4300
+$Comp
+L POT RV1
+U 1 1 572E1117
+P 4100 1750
+F 0 "RV1" H 4100 1650 50  0000 C CNN
+F 1 "POT" H 4100 1750 50  0000 C CNN
+F 2 "Seutec:POT" H 4100 1750 50  0001 C CNN
+F 3 "" H 4100 1750 50  0000 C CNN
+	1    4100 1750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4100 1400 4100 1500
+Wire Wire Line
+	4100 2000 4100 2100
+Wire Wire Line
+	4250 2050 4250 1750
+Wire Wire Line
+	3850 2050 4250 2050
+Connection ~ 4100 2050
+$Comp
+L POT RV2
+U 1 1 572E16ED
+P 8350 1950
+F 0 "RV2" H 8350 1850 50  0000 C CNN
+F 1 "POT" H 8350 1950 50  0000 C CNN
+F 2 "Seutec:POT" H 8350 1950 50  0001 C CNN
+F 3 "" H 8350 1950 50  0000 C CNN
+	1    8350 1950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8500 2400 8500 1950
+Text Label 5100 2150 0    60   ~ 0
+SDA
+Text Label 5200 2050 2    60   ~ 0
+SCL
+Wire Wire Line
+	6400 2400 8500 2400
+Text Notes 6450 1800 0    60   ~ 0
+Config I2C ?\n4-wire SPI ?
+Wire Wire Line
+	4900 2050 5300 2050
+$Comp
+L OLED_WaveShare U3
+U 1 1 572EE9D1
+P 5800 2100
+F 0 "U3" H 5350 2600 60  0000 C CNN
+F 1 "OLED_WaveShare" H 5900 2650 60  0000 C CNN
+F 2 "Seutec_Arduinos:OLED_WaveShare_130" H 5800 2400 60  0001 C CNN
+F 3 "" H 5800 2400 60  0000 C CNN
+	1    5800 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 2150 5100 2150
+Wire Wire Line
+	5300 2250 5000 2250
+Wire Wire Line
+	5000 2250 5000 1850
+Connection ~ 5000 1850
+$Comp
+L Arduino_UNO uP1
+U 1 1 57303342
+P 5850 4500
+F 0 "uP1" H 5600 3500 60  0000 C CNN
+F 1 "Arduino_UNO" H 5800 5600 60  0000 C CNN
+F 2 "Seutec_Arduinos:Arduino_UNO" H 5800 4400 60  0001 C CNN
+F 3 "" H 5800 4400 60  0000 C CNN
+	1    5850 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 3850 6700 3850
+Wire Wire Line
+	4050 4550 5200 4550
+Wire Wire Line
+	3550 4250 5200 4250
+Wire Wire Line
+	3550 4250 3550 4600
+Wire Wire Line
+	3550 4600 3150 4600
+Connection ~ 4600 4250
+Wire Wire Line
+	4750 1750 5300 1750
+Wire Wire Line
+	4750 1750 4750 4150
+Wire Wire Line
+	4750 4150 5200 4150
+Wire Wire Line
+	4600 2800 4600 4250
+Wire Wire Line
+	5100 5350 5200 5350
+Wire Wire Line
+	5200 5250 4900 5250
+Wire Wire Line
+	4900 5250 4900 2050
+$Comp
+L GND #PWR08
+U 1 1 57303DEA
+P 4800 4400
+F 0 "#PWR08" H 4800 4150 50  0001 C CNN
+F 1 "GND" H 4800 4250 50  0000 C CNN
+F 2 "" H 4800 4400 50  0000 C CNN
+F 3 "" H 4800 4400 50  0000 C CNN
+	1    4800 4400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4800 4400 5000 4400
+Wire Wire Line
+	5000 4350 5000 4450
+Wire Wire Line
+	5000 4350 5200 4350
+Wire Wire Line
+	5000 4450 5200 4450
+Connection ~ 5000 4400
+Wire Wire Line
+	3850 2050 3850 4950
+Wire Wire Line
+	4050 5350 4050 4550
+NoConn ~ 5200 3950
+NoConn ~ 5200 4050
+NoConn ~ 6450 5350
+NoConn ~ 6450 5250
+NoConn ~ 6450 5150
+NoConn ~ 6450 5050
+NoConn ~ 6450 4950
+NoConn ~ 6450 4850
+NoConn ~ 6450 4750
+NoConn ~ 6450 4650
+NoConn ~ 6450 4450
+NoConn ~ 6450 4350
+NoConn ~ 6450 4250
+NoConn ~ 6450 4150
+NoConn ~ 6450 4050
+NoConn ~ 6450 3950
+NoConn ~ 6450 3750
+NoConn ~ 6450 3650
+NoConn ~ 6450 3550
+Wire Wire Line
+	3850 4950 5200 4950
+Wire Wire Line
+	3700 4450 3700 4850
+Wire Wire Line
+	3700 4850 5200 4850
+Wire Wire Line
+	4450 5050 5200 5050
+Wire Wire Line
+	4350 5150 5200 5150
+$EndSCHEMATC

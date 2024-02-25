@@ -1,0 +1,47 @@
+"Memoria de Càlcul del Control de Biocida. Calcpad.
+'<hr />
+'<b>Paramatres del Tank</b>
+'Diametre Interior, 'Diam_Int = ? {1.064}m
+'Altura Interior, 'Alt_Int = ? {1.426}m
+'Radi Interior, 'Radi_Int = Diam_Int/2
+
+'<b>Volum Interior Total</b>
+'Area Tank, 'Area_Tank = π*Radi_Int^2
+'Volum Tank, 'Volum_Tank = Area_Tank*Alt_Int
+'Volum Tank en Litros, 'Volum_Tank|L
+
+'<b>Configuració SITRANS</b>
+'Distancia Nivell 0L, 'Dis_0L = 1410mm
+'Distancia Nivell Maxim, 'Dis_Max = 100mm
+'Distancia Mesura, 'Dis_Mesura = Dis_0L - Dis_Max
+
+'<b>Càlcul del Nivell en Litros</b>
+'Volum Mesura, 'Volum_Mesura = Area_Tank*Dis_Mesura
+'Volum Mesura Litros, 'Volum_Mesura_L = Volum_Mesura|L
+'Relació Distancia, 'Volum_Mesura/Dis_Mesura|L/mm
+'Relació Litros, 'Dis_Mesura/Volum_Mesura|mm/L
+
+'<b>Litros(mm)</b>
+'Distancia Mesurada, 'Dist_Mesurada = ? {112}mm
+'Litros Mesurats, 'Nivell_Mesurat = Dist_Mesurada*Volum_Mesura/Dis_Mesura|L
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

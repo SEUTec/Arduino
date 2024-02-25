@@ -1,0 +1,220 @@
+# EESchema Netlist Version 1.1 created  mié 17 nov 2010 15:31:58 CET
+(
+ ( /4CE2D303 bornier2  J3 GND {Lib=CONN_2}
+  (    1 /GND )
+  (    2 /GND )
+ )
+ ( /4CE2CD90 $noname  K2 AH_L {Lib=CONN_3}
+  (    1 /AHO )
+  (    2 /AHS )
+  (    3 /ALO )
+ )
+ ( /4CE2CD58 $noname  K1 BH_L {Lib=CONN_3}
+  (    1 /BHO )
+  (    2 /BHS )
+  (    3 /BLO )
+ )
+ ( /4CE2CB0F $noname  D1 DIODESCH {Lib=DIODESCH}
+  (    1 /BHS )
+  (    2 /POWER )
+ )
+ ( /4CE2CAFA $noname  D3 DIODESCH {Lib=DIODESCH}
+  (    1 /GND )
+  (    2 /BHS )
+ )
+ ( /4CE2CADE $noname  D4 DIODESCH {Lib=DIODESCH}
+  (    1 /GND )
+  (    2 /AHS )
+ )
+ ( /4CE2CABB $noname  D2 DIODESCH {Lib=DIODESCH}
+  (    1 /AHS )
+  (    2 /POWER )
+ )
+ ( /4CE2CA5D $noname  DZ2 ZENER {Lib=ZENER}
+  (    1 /AHS )
+  (    2 N-000005 )
+ )
+ ( /4CE2CA4A $noname  DZ1 ZENER {Lib=ZENER}
+  (    1 /BHS )
+  (    2 N-000007 )
+ )
+ ( /4CE2CA48 $noname  DZ3 ZENER {Lib=ZENER}
+  (    1 /GND )
+  (    2 N-000008 )
+ )
+ ( /4CE2CA3B $noname  DZ4 ZENER {Lib=ZENER}
+  (    1 /GND )
+  (    2 N-000010 )
+ )
+ ( /48301B21 bornier2  J2 AC_OUT {Lib=CONN_2}
+  (    1 /BHS )
+  (    2 /AHS )
+ )
+ ( /48301A54 TO220GDS  Q4 MOSFET_N {Lib=MOSFET_N}
+  (    D /AHS )
+  (    G N-000010 )
+  (    S /GND )
+ )
+ ( /48301A4D TO220GDS  Q3 MOSFET_N {Lib=MOSFET_N}
+  (    D /BHS )
+  (    G N-000008 )
+  (    S /GND )
+ )
+ ( /48301A40 TO220GDS  Q2 MOSFET_N {Lib=MOSFET_N}
+  (    D /POWER )
+  (    G N-000005 )
+  (    S /AHS )
+ )
+ ( /48301A0D TO220GDS  Q1 MOSFET_N {Lib=MOSFET_N}
+  (    D /POWER )
+  (    G N-000007 )
+  (    S /BHS )
+ )
+ ( /483018D4 R4  R4 10 {Lib=R}
+  (    1 N-000010 )
+  (    2 /ALO )
+ )
+ ( /483018D1 R4  R3 10 {Lib=R}
+  (    1 N-000008 )
+  (    2 /BLO )
+ )
+ ( /483018AC R4  R2 10 {Lib=R}
+  (    1 N-000005 )
+  (    2 /AHO )
+ )
+ ( /4830189F R4  R1 10 {Lib=R}
+  (    1 N-000007 )
+  (    2 /BHO )
+ )
+ ( /47F542E8 bornier2  J1 POWER_IN {Lib=CONN_2}
+  (    1 /POWER )
+  (    2 /GND )
+ )
+)
+*
+{ Allowed footprints by component:
+$component D1
+ D?
+ S*
+$endlist
+$component D3
+ D?
+ S*
+$endlist
+$component D4
+ D?
+ S*
+$endlist
+$component D2
+ D?
+ S*
+$endlist
+$component DZ2
+ D?
+ SO*
+ SM*
+$endlist
+$component DZ1
+ D?
+ SO*
+ SM*
+$endlist
+$component DZ3
+ D?
+ SO*
+ SM*
+$endlist
+$component DZ4
+ D?
+ SO*
+ SM*
+$endlist
+$component R4
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component R3
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component R2
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component R1
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$endfootprintlist
+}
+{ Pin List by Nets
+Net 1 "/POWER" "POWER"
+ J1 1
+ D2 2
+ Q1 D
+ Q2 D
+ D1 2
+Net 2 "/BHO" "BHO"
+ R1 2
+ K1 1
+Net 3 "/BLO" "BLO"
+ R3 2
+ K1 3
+Net 4 "/ALO" "ALO"
+ K2 3
+ R4 2
+Net 5 "" ""
+ R2 1
+ DZ2 2
+ Q2 G
+Net 6 "/GND" "GND"
+ D4 1
+ Q3 S
+ J3 1
+ Q4 S
+ J3 2
+ J1 2
+ D3 1
+ DZ3 1
+ DZ4 1
+Net 7 "" ""
+ R1 1
+ Q1 G
+ DZ1 2
+Net 8 "" ""
+ Q3 G
+ R3 1
+ DZ3 2
+Net 9 "/AHO" "AHO"
+ R2 2
+ K2 1
+Net 10 "" ""
+ DZ4 2
+ R4 1
+ Q4 G
+Net 11 "/BHS" "BHS"
+ D1 1
+ D3 2
+ Q1 S
+ DZ1 1
+ J2 1
+ Q3 D
+ K1 2
+Net 12 "/AHS" "AHS"
+ DZ2 1
+ D2 1
+ D4 2
+ Q2 S
+ K2 2
+ J2 2
+ Q4 D
+}
+#End

@@ -1,0 +1,150 @@
+Cmp-Mod V01 Created by CvPCB (20100409 SVN-R2518)-unstable date = mié 17 nov 2010 14:44:09 CET
+
+BeginCmp
+TimeStamp = /4CE2CB0F;
+Reference = D1;
+ValeurCmp = DIODESCH;
+IdModule  = DO-201AD;
+EndCmp
+
+BeginCmp
+TimeStamp = /4CE2CABB;
+Reference = D2;
+ValeurCmp = DIODESCH;
+IdModule  = DO-201AD;
+EndCmp
+
+BeginCmp
+TimeStamp = /4CE2CAFA;
+Reference = D3;
+ValeurCmp = DIODESCH;
+IdModule  = DO-201AD;
+EndCmp
+
+BeginCmp
+TimeStamp = /4CE2CADE;
+Reference = D4;
+ValeurCmp = DIODESCH;
+IdModule  = DO-201AD;
+EndCmp
+
+BeginCmp
+TimeStamp = /4CE2CA4A;
+Reference = DZ1;
+ValeurCmp = ZENER;
+IdModule  = DO-41;
+EndCmp
+
+BeginCmp
+TimeStamp = /4CE2CA5D;
+Reference = DZ2;
+ValeurCmp = ZENER;
+IdModule  = DO-41;
+EndCmp
+
+BeginCmp
+TimeStamp = /4CE2CA48;
+Reference = DZ3;
+ValeurCmp = ZENER;
+IdModule  = DO-41;
+EndCmp
+
+BeginCmp
+TimeStamp = /4CE2CA3B;
+Reference = DZ4;
+ValeurCmp = ZENER;
+IdModule  = DO-41;
+EndCmp
+
+BeginCmp
+TimeStamp = /47F542E8;
+Reference = J1;
+ValeurCmp = POWER_IN;
+IdModule  = RGLT2;
+EndCmp
+
+BeginCmp
+TimeStamp = /48301B21;
+Reference = J2;
+ValeurCmp = AC_OUT;
+IdModule  = RGLT2;
+EndCmp
+
+BeginCmp
+TimeStamp = /4CE2D303;
+Reference = J3;
+ValeurCmp = GND;
+IdModule  = RGLT2;
+EndCmp
+
+BeginCmp
+TimeStamp = /4CE2CD58;
+Reference = K1;
+ValeurCmp = BH_L;
+IdModule  = RGLT3;
+EndCmp
+
+BeginCmp
+TimeStamp = /4CE2CD90;
+Reference = K2;
+ValeurCmp = AH_L;
+IdModule  = RGLT3;
+EndCmp
+
+BeginCmp
+TimeStamp = /48301A0D;
+Reference = Q1;
+ValeurCmp = MOSFET_N;
+IdModule  = TO-220GDS_V_HeatSink;
+EndCmp
+
+BeginCmp
+TimeStamp = /48301A40;
+Reference = Q2;
+ValeurCmp = MOSFET_N;
+IdModule  = TO-220GDS_V_HeatSink;
+EndCmp
+
+BeginCmp
+TimeStamp = /48301A4D;
+Reference = Q3;
+ValeurCmp = MOSFET_N;
+IdModule  = TO-220GDS_V_HeatSink;
+EndCmp
+
+BeginCmp
+TimeStamp = /48301A54;
+Reference = Q4;
+ValeurCmp = MOSFET_N;
+IdModule  = TO-220GDS_V_HeatSink;
+EndCmp
+
+BeginCmp
+TimeStamp = /4830189F;
+Reference = R1;
+ValeurCmp = 10;
+IdModule  = R1/4;
+EndCmp
+
+BeginCmp
+TimeStamp = /483018AC;
+Reference = R2;
+ValeurCmp = 10;
+IdModule  = R1/4;
+EndCmp
+
+BeginCmp
+TimeStamp = /483018D1;
+Reference = R3;
+ValeurCmp = 10;
+IdModule  = R1/4;
+EndCmp
+
+BeginCmp
+TimeStamp = /483018D4;
+Reference = R4;
+ValeurCmp = 10;
+IdModule  = R1/4;
+EndCmp
+
+EndListe

@@ -1,0 +1,10 @@
+Cable USB Serie TTL PL2303HX
+
+Convertidor USB - TTL con cable basado en el chip PL2303HX para comunicar con tu ordenador todo aquello que utilice una conexión serial a 5V (TTL), módulos Arduino, Rasp, routers, unidades de cd, placas base, etc.
+
+    Conectividad: USB 2.0 compatible con USB 1.1
+    Comunicación: USB a serie TTL
+    Chip: PL2303HX incorporado en conector USB
+    Cable: 1 metro
+    Driver: Linux, Mac, Windows CE y Windows (XP, 2003), Vista, Win 7
+    Conexion TTL: 4 pin hembra (negro GND, verde TXD, blanco RXD, rojo VCC 5V)

@@ -1,0 +1,2 @@
+Els DigiPots 41xx 10k no funcionen en un Arduino MKRZERO, pot ser la tensió
+de 3.3 V que no hauria de ser, o per la llibraria SPI ??

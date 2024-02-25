@@ -1,0 +1,16 @@
+# Videos
+*.mp4
+*.MP4
+**/*.mp4
+**/*.MP4
+**/*.AppImage
+**/*.pdf
+
+# Folders Folder_Name/
+ArduinoCC/
+ArduinoCC/*.*
+ArduinoCC/*.AppImage
+Libros_Arduino/
+Libros_Arduino/*.*
+Libros_Arduino/*.pdf
+
